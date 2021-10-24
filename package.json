@@ -1,0 +1,12 @@
+{
+  "name": "qmk-firmware",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "prepare": "cd qmk_firmware; git submodule sync --recursive && git submodule update --init --recursive",
+    "setup": "qmk setup; qmk setup user.keyboard=keebio/iris; qmk setup user.keymap=uaihu",
+    "build": "qmk compile -kb keebio/iris -km uaihu"
+  },
+  "author": "Ivan Ramos <iardoru@gmail.com>",
+  "license": "GPL3"
+}
